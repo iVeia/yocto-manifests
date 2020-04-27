@@ -44,9 +44,9 @@ Create an empty directory to hold your working files:
 
 To use the release branch, type:
 
-    $ repo init -u git://github.com/iVeia/yocto-manifests.git -b *branch*
+    $ repo init -u git://github.com/iVeia/yocto-manifests.git -b <branch>
 
-where *branch* is the name of the branch or tag you wish to download.
+where *<branch>* is the name of the branch or tag you wish to download.
 
 A successful initialization will end with a message stating that Repo is
 initialized in your working directory. Your directory should now contain a
