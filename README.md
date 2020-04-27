@@ -1,10 +1,10 @@
-Xilinx Repo Manifests for the Yocto Project Build System
+iVeia Repo Manifests for the Yocto Project Build System
 =============================================
 This repository provides Repo manifests to setup the Yocto build system for
-supported Xilinx products.
+supported iVeia products, and is based off of the Xilinx's repository.
 
 The Yocto Project allows the creation of custom linux distributions for
-embedded systems, including Xilinx-based systems.  It is a collection of git
+embedded systems, including iVeia-based systems.  It is a collection of git
 repositories known as *layers* each of which provides *recipes* to build
 software packages as well as configuration information.
 
@@ -38,13 +38,15 @@ with the help flag.
 
 Create an empty directory to hold your working files:
 
-    $ XILINX_SOURCES=/path/to/xilinx/sources
-    $ mkdir -p $XILINX_SOURCES
-    $ cd $XILINX_SOURCES
+    $ IVEIA_SOURCES=/path/to/iveia/sources
+    $ mkdir -p $IVEIA_SOURCES
+    $ cd $IVEIA_SOURCES
 
 To use the release branch, type:
 
-    $ repo init -u git://github.com/Xilinx/yocto-manifests.git -b rel-v2019.2
+    $ repo init -u git://github.com/iVeia/yocto-manifests.git -b *branch*
+
+where *branch* is the name of the branch or tag you wish to download.
 
 A successful initialization will end with a message stating that Repo is
 initialized in your working directory. Your directory should now contain a
@@ -74,7 +76,7 @@ different repositories and branches or pull in additional meta-layers.
 
 Clone this repository (or fork it on github):
 
-    $ git clone git://github.com/Xilinx/yocto-manifests.git
+    $ git clone git://github.com/iVeia/yocto-manifests.git
 
 Make your changes (and contribute them back if they are generally useful), and
 then re-initialize your repo client
